@@ -14,19 +14,28 @@
 
 ![plot](./images/w1.jpg)
 
-* 二值化
+* 1. 二值化。
+
+        虽然二值化算法有很多种，但是并没有一种通用的二值化算法达到我们对身份证识别的要求，本案采用二值化算法池的思路，进行遍历试探，
+        这样能够有效增加识别的成功率。
 
 ![plot](./dist/images/process.jpg)
 
-* 图形学处理：膨胀与模糊，主要起到降噪和轮廓增强
+* 2. 图形学处理：膨胀与模糊，主要起到降噪和轮廓增强
 
 ![plot](./dist/images/process1.jpg)
 
-* 处理结果
+* 3. 获取身份证号码区域，计算其倾斜角度，如果角度大于10度，则进行透视变换进行校正，然后重复1、2操作
+
+![plot](./dist/images/toushi.jpg)
+
+参考：https://blog.csdn.net/xieyan0811/article/details/71106539
+
+
+* 4. 处理结果
 
 ![plot](./dist/images/result.jpg)
 
-整理中，请等待。
 
 
 
