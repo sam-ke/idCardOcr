@@ -14,7 +14,7 @@ python 2.7
 
 安装好依赖后，编辑文件，根据系统环境（Windows or Linux），修改tesseract可执行文件的全路径：include/functions.py，如下图所示
 
-![plot](./images/exe.jpg)
+![plot](./dist/images/exe.jpg)
 
 编译
 * 以Linux为例,cd 到项目的根目录，执行如下shell
