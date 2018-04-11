@@ -11,15 +11,19 @@
 # 案例展示
 
 * 原图：
+
 ![plot](./images/w1.jpg)
 
 * 二值化
+
 ![plot](./dist/images/process.jpg)
 
 * 图形学处理：膨胀与模糊，主要起到降噪和轮廓增强
+
 ![plot](./dist/images/process1.jpg)
 
 * 处理结果
+
 ![plot](./dist/images/result.jpg)
 
 整理中，请等待。
