@@ -29,7 +29,7 @@ $ pyinstaller -F ocr.py
 
 ./dist/ocr -h
 
-![plot](./images/help.jpg)
+![plot](./dist/images/help.jpg)
 
 # 案例展示
 #### 声明：以下图片均是通过搜索引擎获取，本人并不清楚该身份证的真实性，如确实存在此人，请您及时联系，
