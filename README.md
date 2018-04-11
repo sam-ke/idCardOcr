@@ -14,7 +14,7 @@ python 2.7
 
 安装好依赖后，编辑文件，根据系统环境（Windows or Linux），修改tesseract可执行文件的全路径：include/functions.py，如下图所示
 
-![plot](./dist/images/exe.jpg)
+![plot](./static/images/exe.jpg)
 
 编译
 * 以Linux为例,cd 到项目的根目录，执行如下shell
@@ -29,7 +29,7 @@ $ pyinstaller -F ocr.py
 
 ./dist/ocr -h
 
-![plot](./dist/images/help.jpg)
+![plot](./static/images/help.jpg)
 
 # 案例展示
 #### 声明：以下图片均是通过搜索引擎获取，本人并不清楚该身份证的真实性，如确实存在此人，请您及时联系，
@@ -44,22 +44,22 @@ $ pyinstaller -F ocr.py
 虽然二值化算法有很多种，但是并没有一种通用的二值化算法达到我们对身份证识别的要求，本案采用二值化算法池的思路，进行遍历试探，
 这样能够有效增加识别的成功率。
 
-![plot](./dist/images/process.jpg)
+![plot](./static/images/process.jpg)
 
 * 2. 图形学处理：膨胀与模糊，主要起到降噪和轮廓增强
 
-![plot](./dist/images/process1.jpg)
+![plot](./static/images/process1.jpg)
 
 * 3. 获取身份证号码区域，计算其倾斜角度，如果角度大于10度，则进行透视变换进行校正，然后重复1、2操作
 
-![plot](./dist/images/toushi.jpg)
+![plot](./static/images/toushi.jpg)
 
 参考：https://blog.csdn.net/xieyan0811/article/details/71106539
 
 
 * 4. 处理结果
 
-![plot](./dist/images/result.jpg)
+![plot](./static/images/result.jpg)
 
 
 # 优化
