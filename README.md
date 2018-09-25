@@ -57,6 +57,13 @@ $ pyinstaller -F ocr.py
 参考：https://blog.csdn.net/xieyan0811/article/details/71106539
 
 
+  找到身份证号码所在的区域后，按照身份证文字排版结构比例进行估算，大致锁定目标区域的坐标，直接忽略其他区域，以防止无效区域对识别过程产生干扰
+
+![plot](./static/images/location.jpg)
+
+
+
+
 * 4. 处理结果
 
 ![plot](./static/images/result.jpg)
